@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".beachhouse">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/grey_bg">
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="#00ffffff"
+                    android:drawableStart="@drawable/search_icon"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="@string/Your_destination"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/darkBlue"
+                    android:textColorHint="@color/darkBlue"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="85dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/blue_bg"
+                    android:gravity="center"
+                    android:text="@string/search"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="DuplicateIds" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/beach_houses" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Ocean View Beach House"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView1_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="The Ocean View Beach House offers stunning panoramic views of the ocean. With a spacious deck, you can enjoy the sunrise or sunset while listening to the calming waves. Perfect for families or small groups looking to experience the beauty of the coast in a comfortable setting." />
+
+            <!-- Beach House 2: Seaside Retreat -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ocen" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Seaside Retreat"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView2_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Seaside Retreat is a luxurious beach house offering direct access to the beach. Relax in the spacious living area with large windows that allow natural light to pour in, providing a fresh and airy atmosphere. Perfect for those who love waking up to the sound of the ocean and enjoying the beach at their doorstep." />
+
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Book Now "
+                android:textColor="@color/black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/villa" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Sunset Villa"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Sunset Villa is an exquisite beach house offering unmatched sunset views. Relax on the deck with a drink in hand while watching the sun dip below the horizon. The villa is designed for comfort, with cozy furnishings and a large open space perfect for entertaining or quiet reflection." />
+
+            <!-- Beach House 4: The Beachfront Escape -->
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Book Now "
+                android:textColor="@color/black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/beach12345" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="The Beachfront Escape"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView4_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="The Beachfront Escape offers a serene and peaceful atmosphere right by the water’s edge. Wake up to the sound of waves and enjoy private access to the beach. The house is equipped with modern amenities while retaining a natural, rustic charm. Ideal for couples or anyone seeking tranquility by the ocean." />
+
+            <!-- Beach House 5: Tropical Paradise -->
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Book Now "
+                android:textColor="@color/black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/tropical" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Tropical Paradise"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView5_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Tropical Paradise is a stunning beach house surrounded by lush greenery and vibrant tropical flora. It offers a secluded getaway with private beaches and spectacular views of the coastline. Ideal for nature lovers, the house is perfect for those looking to enjoy both relaxation and adventure in a tranquil environment." />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Book Now"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="See More.."
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

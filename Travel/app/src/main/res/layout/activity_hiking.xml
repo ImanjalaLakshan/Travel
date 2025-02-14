@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hiking">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Hiking Destination 1: Adam's Peak -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/grey_bg">
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:background="#00ffffff"
+                    android:drawableStart="@drawable/search_icon"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="@string/Your_destination"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/darkBlue"
+                    android:textColorHint="@color/darkBlue"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="85dp"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/blue_bg"
+                    android:gravity="center"
+                    android:text="@string/search"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/hi2" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Explore the Mountain"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="25dp"
+                android:justificationMode="inter_word"
+                android:text="Embark on an unforgettable hiking adventure through Sri Lanka’s breathtaking landscapes, where lush forests meet mist-covered mountains and vibrant tea plantations stretch as far as the eye can see. Explore scenic trails that lead you through ancient rainforests, offering a peaceful escape into nature's heart. Feel the thrill of conquering rugged peaks and witnessing awe-inspiring views from the top, where panoramic vistas of valleys, waterfalls, and rolling hills await. Whether you’re trekking to the summit of Adam’s Peak, navigating the trails of the Knuckles Mountain Range, or strolling through serene forests at Horton Plains, each hike promises an experience filled with natural beauty and a sense of serenity. With every step, you’ll uncover Sri Lanka's rich biodiversity, cultural heritage, and the perfect balance between adventure and tranquility in the great outdoors." />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/adams_peak" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Adam's Peak"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView1_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Adam's Peak is one of Sri Lanka's most revered hiking destinations. The hike to the summit, renowned for the footprint believed to belong to Buddha, offers a spiritual and scenic experience with breathtaking views of the surrounding mountains and valleys." />
+
+            <!-- Hiking Destination 2: Knuckles Mountain Range -->
+            <Button
+                android:id="@+id/button"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Select "
+                android:textColor="@color/black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/knukels" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Knuckles Mountain Range"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView2_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="The Knuckles Mountain Range offers a challenging and rewarding hiking experience. With its lush forests, diverse wildlife, and rugged terrain, it provides a true wilderness adventure. Hiking here will reward you with incredible panoramic views." />
+
+            <!-- Hiking Destination 3: Horton Plains -->
+            <Button
+                android:id="@+id/button"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Select "
+                android:textColor="@color/black"
+                tools:ignore="DuplicateIds" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/hortan" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Horton Plains"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Horton Plains National Park offers a stunning plateau with unique cloud forests and diverse flora. The World’s End trail provides spectacular views of steep cliffs dropping into the valleys below, making it a must-do for hikers in Sri Lanka." />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Select "
+                android:textColor="@color/black"
+                tools:ignore="DuplicateIds" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ella" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Ella Rock"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView4_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Ella Rock offers a moderately challenging hike with spectacular views of the valley and surrounding hills. The hike rewards you with sweeping views of tea plantations, waterfalls, and lush green scenery." />
+
+            <!-- Hiking Destination 5: Lipton's Seat -->
+            <Button
+                android:id="@+id/button"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Select "
+                android:textColor="@color/black"
+                tools:ignore="DuplicateIds" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lipton" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Lipton's Seat"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView5_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Lipton's Seat is one of the most famous viewpoints in Sri Lanka, offering panoramic views of the surrounding hills and tea plantations. The easy hike to the top is suitable for all levels and rewards hikers with one of the best vistas in the country." />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="110dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Select "
+                android:textColor="@color/black"
+                tools:ignore="DuplicateIds" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="See More.. "
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hotelAccommodation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hotel 1: The Grand Palace Hotel -->
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/hotel1" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="The Grand Palace Hotel"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView1_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="The Grand Palace Hotel offers a royal experience with its opulent rooms, high-end amenities, and luxurious interiors. Located in the heart of the city, it’s perfect for business travelers and vacationers looking for a lavish stay." />
+
+            <!-- Hotel 2: Seaview Resort -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aaa1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Seaview Resort"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView2_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Located by the beach, Seaview Resort offers stunning ocean views from each room. It features an infinity pool, outdoor restaurant, and spacious suites, perfect for those seeking a relaxing getaway by the sea." />
+
+            <!-- Hotel 3: Urban Heights Hotel -->
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Book Now "
+                android:textColor="@color/black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aaa2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Urban Heights Hotel"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="The Urban Heights Hotel is known for its modern amenities and sleek design. With a rooftop bar offering panoramic city views and luxurious rooms, it is ideal for both business and leisure travelers." />
+
+            <!-- Hotel 4: Mountain View Lodge -->
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Book Now "
+                android:textColor="@color/black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aaa3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Mountain View Lodge"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Nestled in the foothills, the Mountain View Lodge provides breathtaking mountain views, outdoor activities, and a cozy ambiance. Perfect for nature lovers looking for a peaceful retreat away from the hustle and bustle of the city." />
+
+            <!-- Hotel 5: Desert Mirage Hotel -->
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Book Now "
+                android:textColor="@color/black" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="450dp"
+                    android:layout_height="250dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/aaa4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tx1"
+                android:text="Desert Mirage Hotel"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView5_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:text="Set in the heart of the desert, the Desert Mirage Hotel offers a unique experience with luxurious tents, camel rides, and starlit dinners. Ideal for those looking to explore the vast landscapes in a comfortable, all-inclusive setting." />
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="Book Now "
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/button28"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/lightGreen"
+                android:fontFamily="@font/tx1"
+                android:text="See More.. "
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

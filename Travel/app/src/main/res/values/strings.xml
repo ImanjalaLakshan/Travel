@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Travel app</string>
+    <string name="introTitle">Explore the <font color='#3f95ec'>Pearl</font> of the Indian Ocean</string>
+    <string name="subIntro">🌿 "Your Ultimate Guide to Unforgettable Journeys in Sri Lanka"</string>
+    <string name="street_address_city">Street, Address, City...</string>
+    <string name="Your_destination">Search Your Choice..</string>
+    <string name="search">Search</string>
+    <string name="popular_destination">Popular Destination</string>
+    <string name="select">Select</string>
+</resources>
